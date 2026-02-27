@@ -3,7 +3,9 @@ import './App.css'
 import useCounter from './hooks/useCounter';
 
 function App() {
-  const {count,increment,decrement,reset} = useCounter();
+  const {count,increment,decrement,reset} = useCounter({initialValue:0,step:2,max:0,min:10});
+
+
   return (
     <>
       <h1>{count}</h1>
