@@ -1,17 +1,15 @@
 
 import './App.css'
-import useCounter from './hooks/useCounter';
+import AddTodo from './Pages/AddTodo';
+// import Counters from './Pages/Counters';
 
 function App() {
-  const {count,increment,decrement,reset} = useCounter({initialValue:0,step:2,max:0,min:10});
 
 
   return (
     <>
-      <h1>{count}</h1>
-      <button onClick={increment}> increment </button>
-      <button onClick={decrement}>➖ Decrement</button>
-      <button onClick={reset}>🔄 Reset</button>
+      {/* <Counters /> */}
+      <AddTodo />
     </>
   );
 }
