@@ -43,11 +43,6 @@ export default function AddTodo() {
      <button onClick={handleAdd}>handle Add </button>
 
      <hr></hr>
-     {/* <button onClick={() => addTodo}>Add</button>
-     <button onClick={() => removeTodo}>Add</button>
-     <button onClick={() => toggle}>Add</button> */}
-     {/* <button onClick={() => removeTodo}>Add</button> */}
-
      {todos.map((item) => (
        <div key={item.id}>
          <p
