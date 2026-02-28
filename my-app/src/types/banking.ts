@@ -1,4 +1,4 @@
-export type TransactionType = "Credit" | "Debit";
+/* export type TransactionType = "Credit" | "Debit";
 
 export interface Transaction {
   id: number;
@@ -14,4 +14,20 @@ export interface Account {
   name: string;
   balance: number;
   transactions: Transaction[];
+
+}
+
+ */ export interface Transaction {
+  id: number;
+  type: "DEBIT" | "CREDIT";
+  amount: number;
+  description: string;
+  date: string;
+}
+
+export interface Account {
+  id: number;
+  holder: string;
+  balance: number;
+  history: Transaction[];
 }
