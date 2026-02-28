@@ -1,17 +1,16 @@
-
-import './App.css'
-import AddTodo from './Pages/AddTodo';
+import "./App.css";
+import ToysShop from "./Pages/ToysShop";
+// import AddTodo from "./Pages/AddTodo";
 // import Counters from './Pages/Counters';
 
 function App() {
-
-
   return (
     <>
       {/* <Counters /> */}
-      <AddTodo />
+      {/* <AddTodo /> */}
+      <ToysShop />
     </>
   );
 }
 
-export default App
+export default App;
