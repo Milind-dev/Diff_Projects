@@ -1,12 +1,17 @@
+export type TransactionType = "Credit" | "Debit";
+
 export interface Transaction {
   id: number;
-  type: "DEPOSIT" | "WITHDRAW" | "SETTLEMENT";
+  type: TransactionType;
   amount: number;
+  from?: number;
+  to?: number;
   date: string;
 }
 
 export interface Account {
-  accountHolder: string;
-  accountNumber: number;
+  id: number;
+  name: string;
   balance: number;
+  transactions: Transaction[];
 }
